@@ -24,12 +24,15 @@ export default function LinkForm() {
             setLoading(false);
             return;
         }
-        const response = await fetch(`/api/worker/create?slug=${slug}&destination=${destination}`, {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json",
+        const response = await fetch(
+            `/api/worker/create?slug=${slug}&destination=${destination}`,
+            {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
             },
-        });
+        );
 
         if (!response.ok) {
             toast.error("Failed to create link");
@@ -42,8 +45,7 @@ export default function LinkForm() {
             setLoading(false);
             setTimeout(() => {
                 router.push("/dashboard");
-            }
-            , 3000);
+            }, 3000);
         }
     };
 

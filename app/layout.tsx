@@ -9,7 +9,6 @@ export const metadata: Metadata = {
     description: "Shorten links with your own domain, powered by Cloudflare",
 };
 
-
 export default function RootLayout({
     children,
 }: Readonly<{

@@ -21,7 +21,6 @@ export async function POST(request: NextRequest) {
         },
         body: JSON.stringify({ slug: slug }),
     });
-    console.log(response);
     if (!response.ok) {
         return new Response("Failed to delete link", {
             status: 500,
