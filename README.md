@@ -1,36 +1,30 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# ShortFlare
 
-## Getting Started
+Shorten and track URLs on your domain for completely free with your Cloudflare account
 
-First, run the development server:
+- Unlimited URLs
+- Ultra low-latency redirects hanks to Cloudflare's 275+ locations
+- Free unlimited geo-located analytics (up to Workers Free limit off 100k per day)
+- Manage your links with an API, or a dashboard
+- No need to [sign up for three billion different SaaS products](https://github.com/dubinc/dub?tab=readme-ov-file#tech-stack), all you need is that Cloudflare account you already have
+- Easy (ish) setup
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Setup
+You'll need:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- A Cloudflare Account
+- A VPS or similar Linux server
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+[Read the setup guide](https://docs.mikn.dev/solutions/shortflare)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+> If you don't require analytics or a dashboard, you may just [deploy the worker](https://docs.mikn.dev/solutions/shortflare#) and have fun!<br>
+> ⚠️ ShortFlare's UI will not run on a serverless PaaS (e.g. Vercel, Netlify), you will need a proper server to run it
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Powered by
+- [Cloudflare Workers](https://workers.cloudflare.com)
+- [Cloudflare D1](https://developers.cloudflare.com/d1/)
+- [Next.JS](https://nextjs.org/)
+    - [shadcn/ui](https://ui.shadcn.com/)
+    - [UIAstra](https://www.uiastra.com/)
+    - [Sonner](https://sonner.emilkowal.ski/)
+    - [NextAuth.JS](https://next-auth.js.org/)
